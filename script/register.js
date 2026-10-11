@@ -33,7 +33,14 @@ re_form.addEventListener("submit", function(e) {
         localStorage.setItem('users', JSON.stringify([newUser]));
     } else {
         var arr_user = JSON.parse(users);
-        var is_exsist = arr_user.some(user => user.Email === email);
+        var is_exsist = false;
+
+
+        arr_user.forEach(user => {
+            if (user.Email === email) {
+                is_exsist = true;
+            }
+        });
 
         if (is_exsist) {
             alert("Tài khoản đã tồn tại");
