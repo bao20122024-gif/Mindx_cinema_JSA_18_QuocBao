@@ -50,7 +50,7 @@ function createMovieList(film) {
                 <div class="card">
                     <img src="https://image.tmdb.org/t/p/w300${movie.poster_path}" alt="photo" class="card-img-top">
                     <div class="card-body">
-                        <h5 class="card-title">${movie.title}</h5>
+                       <a href="./detailed.html?movie_id=${movie.id}">${movie.title}</a>
                         <p class="card-text">${movie.overview}</p>
                     </div>
                 </div>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src='./script/detail.js' defer></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid d-flex justify-content-between">
+            <a class="navbar-brand" href="#">MindxCinema</a>
+            <div class="d-flex gap-2">
+                <div id="auth-buttons">
+                    <button class="btn btn-outline-primary" type="button" onclick="location.href='login.html'">Login</button>
+                    <button class="btn btn-outline-success" type="button" onclick="location.href='register.html'">Register</button>
+                </div>
+                <div id="user-info">
+                    <span id="username-display"></span>
+                    <button class="btn btn-outline-danger" type="button" id="logout-button">Logout</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <div>
+        <img src="https://image.tmdb.org/t/p/original/zDE9hd1SG9695YncbZGjSf7Z9Jk.jpg" alt="Backdrop Image" class="img-fluid" style="width: 100%; height: auto;" id="backdrop-image">
+
+        <div class="container mt-4 d-flex">
+            <img src="https://image.tmdb.org/t/p/w300/ccxdepKqORLwccbzvO4eAGkN0IC.jpg" alt="Poster Image" class="img-fluid" id="poster-image">
+            <div class="ms-4">
+                <h2 id="movie-title">Movie Title: Example Movie</h2>
+                <p id="movie-overview">Overview: This is an example movie overview.</p>
+                <p id="movie-release-date">Release Date: 2024-01-01</p>
+                <p id="movie-genre">Genre: Action</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
