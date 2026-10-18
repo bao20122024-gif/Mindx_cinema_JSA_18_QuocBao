@@ -1,0 +1,11 @@
+a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+body {
+    background: url(https://aldianews.com/sites/default/files/articles/619306-bg-full-netflix-grid-v2.desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}

@@ -22,5 +22,4 @@ btn_log_out.addEventListener("click", function() {
     // window.location.href = "./login.html"
     checkout()
 })
-
 checkout()
